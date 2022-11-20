@@ -366,6 +366,20 @@
                     </li>
                 </ul>
             </div>
+            <form class="subscription-form">
+                <b class="subscription-caption">Підпишіться на розсилку</b>
+                <div class="subscription-thumb" role="form-group">            
+                    <label>
+                        <input class="subscription-input" name="email" type="email" placeholder="E-mail" required>
+                    </label>
+                    <button class="subscription-button" type="submit">
+                        Підписатися
+                        <svg class="subscription-button-icon" width="24" height="24">
+                            <use href="./images/svg-sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
     <!-- модальне вікно -->
@@ -376,13 +390,13 @@
                     <use href="./images/svg-sprite.svg#close-btn"></use>
                 </svg>
             </button>
-            <strong class="form-logo">Залиште свої дані, ми вам передзвонимо</strong>
+            <b class="form-logo">Залиште свої дані, ми вам передзвонимо</b>
             <!-- форма -->
             <form name="signup-form">
                 <label class="form-label">
                     Ім'я
                     <div class="form-thumb">
-                        <input class="form-input" name="username" type="text">
+                        <input class="form-input" name="username" type="text" required>
                         <svg class="form-image" width="18" height="18">
                             <use href="./images/svg-sprite.svg#person-black"></use>
                         </svg>
@@ -391,7 +405,7 @@
                 <label class="form-label">
                     Телефон
                     <div class="form-thumb">
-                        <input class="form-input" name="telephone-number" type="tel">
+                        <input class="form-input" name="telephone-number" type="tel" required>
                         <svg class="form-image" width="18" height="18">
                             <use href="./images/svg-sprite.svg#phone-black"></use>
                         </svg>
@@ -400,7 +414,7 @@
                 <label class="form-label">
                     Пошта
                     <div class="form-thumb">
-                        <input class="form-input" name="email" type="email">
+                        <input class="form-input" name="email" type="email" required>
                         <svg class="form-image" width="18" height="18">
                             <use href="./images/svg-sprite.svg#email-black"></use>
                         </svg>
@@ -411,7 +425,7 @@
                     <textarea class="form-coments" name="coments" rows="10" placeholder="Введіть текст"></textarea>
                 </label>
                 <label class="checkbox-label">
-                    <input class="checkbox" name="contracts" type="checkbox" value="agree">
+                    <input class="checkbox" name="contracts" type="checkbox" value="agree" required>
                     <span class="checkbox-icon"></span>
                     Погоджуюся з розсилкою та приймаю
                     <a href="">Умови договору</a>
