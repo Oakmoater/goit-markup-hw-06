@@ -574,6 +574,7 @@ a.akcent::after{
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
     cursor: pointer;
 }
 .modal-close-btn:hover, .modal-close-btn:focus{
@@ -616,11 +617,12 @@ a.akcent::after{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
+    cursor: pointer;
 }
-.form-input:focus{
-    border-color: var(--akcent-color);
+.form-input:focus,.form-input:hover,.form-coments:focus,.form-coments:hover{
+    outline: 1px solid var(--akcent-color);
 }
-.form-input:focus +.form-image {
+.form-input:focus +.form-image, .form-input:hover +.form-image{
     fill: var(--akcent-color);
 }
 .form-coments{
@@ -646,7 +648,7 @@ a.akcent::after{
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.checkbox {
+.checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
@@ -661,6 +663,7 @@ a.akcent::after{
 }
 .checkbox-label>a{
     margin-left: 10px;
+    color: var(--akcent-color);
 }
 .checkbox:checked + .checkbox-icon{
     background: var(--akcent-color);
@@ -687,6 +690,6 @@ a.akcent::after{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .signup-button:hover,
-.signup-button:focus {
+.signup-button:focus{
     background-color: var(--akcent-btn-color);
 }
