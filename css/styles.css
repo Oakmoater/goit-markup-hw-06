@@ -617,6 +617,9 @@ a.akcent::after{
     border-radius: 4px;
     padding-left: 42px;
 }
+.form-input:focus{
+    border-color: var(--akcent-color);
+}
 .form-input:focus +.form-image {
     fill: var(--akcent-color);
 }
